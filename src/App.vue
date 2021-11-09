@@ -1,15 +1,25 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+  <get-requests/>
+  <post-put-patch-requests/>
+  <file-uploads/>
+  <reusable-fetch/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import GetRequests from './components/GetRequests.vue';
+import PostPutPatchRequests from './components/PostPutPatchRequests.vue';
+import FileUploads from './components/FileUploads.vue';
+import ReusableFetch from './components/ReusableFetch.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    GetRequests,
+    PostPutPatchRequests,
+    FileUploads,
+    ReusableFetch
   }
 }
 </script>
